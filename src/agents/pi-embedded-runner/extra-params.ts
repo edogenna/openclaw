@@ -110,6 +110,8 @@ type CacheRetentionStreamOptions = Partial<SimpleStreamOptions> & {
   cacheRetention?: "none" | "short" | "long";
   cachedContent?: string;
   openaiWsWarmup?: boolean;
+  openaiLogFile?: string;
+  openaiLogEnabled?: boolean;
 };
 type SupportedTransport = Exclude<CacheRetentionStreamOptions["transport"], undefined>;
 
@@ -259,6 +261,12 @@ function createStreamFnWithExtraParams(
   }
   if (typeof extraParams.openaiWsWarmup === "boolean") {
     streamParams.openaiWsWarmup = extraParams.openaiWsWarmup;
+  }
+  if (typeof extraParams.openaiLogFile === "string" && extraParams.openaiLogFile.trim()) {
+    streamParams.openaiLogFile = extraParams.openaiLogFile.trim();
+  }
+  if (typeof extraParams.openaiLogEnabled === "boolean") {
+    streamParams.openaiLogEnabled = extraParams.openaiLogEnabled;
   }
   const cachedContent =
     typeof extraParams.cachedContent === "string"

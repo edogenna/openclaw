@@ -1,0 +1,119 @@
+{"ts":1775921214225,"event":"assistant_message_end","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","rawText":"","rawThinking":""}
+{"ts":1775921216060,"event":"assistant_message_end","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","rawText":"","rawThinking":""}
+{"ts":1775921316616,"event":"assistant_thinking_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"thinking_start","delta":"","content":""}
+{"ts":1775921317127,"event":"assistant_thinking_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"thinking_end","delta":"","content":""}
+{"ts":1775921317442,"event":"assistant_message_end","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","rawText":"","rawThinking":""}
+{"ts":1775921320560,"event":"assistant_message_end","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","rawText":"","rawThinking":""}
+{"ts":1775921534938,"event":"assistant_thinking_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"thinking_start","delta":"","content":""}
+{"ts":1775921535548,"event":"assistant_thinking_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"thinking_end","delta":"","content":""}
+{"ts":1775921535548,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_start","delta":"","content":""}
+{"ts":1775921535549,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"[[","content":""}
+{"ts":1775921535552,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"reply","content":""}
+{"ts":1775921535553,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"_to","content":""}
+{"ts":1775921535553,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"_current","content":""}
+{"ts":1775921535554,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"]]","content":""}
+{"ts":1775921535555,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"Chicago","content":""}
+{"ts":1775921535556,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"’s","content":""}
+{"ts":1775921535557,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" having","content":""}
+{"ts":1775921535558,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" a","content":""}
+{"ts":1775921535558,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" bright","content":""}
+{"ts":1775921535559,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" but","content":""}
+{"ts":1775921535559,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" chilly","content":""}
+{"ts":1775921535559,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" spring","content":""}
+{"ts":1775921535559,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" day","content":""}
+{"ts":1775921535559,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":":","content":""}
+{"ts":1775921535560,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" about","content":""}
+{"ts":1775921535560,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" ","content":""}
+{"ts":1775921535560,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"44","content":""}
+{"ts":1775921535560,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" ","content":""}
+{"ts":1775921535560,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"°F","content":""}
+{"ts":1775921535561,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" (","content":""}
+{"ts":1775921535561,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"7","content":""}
+{"ts":1775921535561,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" ","content":""}
+{"ts":1775921535561,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"°C","content":""}
+{"ts":1775921535562,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" now","content":""}
+{"ts":1775921535562,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" with","content":""}
+{"ts":1775921535561,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":")","content":""}
+{"ts":1775921535561,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" right","content":""}
+{"ts":1775921535562,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" a","content":""}
+{"ts":1775921535562,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" sun","content":""}
+{"ts":1775921535562,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" and","content":""}
+{"ts":1775921535563,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" few","content":""}
+{"ts":1775921535563,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" high","content":""}
+{"ts":1775921535563,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" clouds","content":""}
+{"ts":1775921535563,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" an","content":""}
+{"ts":1775921535564,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"SE","content":""}
+{"ts":1775921535564,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" E","content":""}
+{"ts":1775921535564,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" breeze","content":""}
+{"ts":1775921535564,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" near","content":""}
+{"ts":1775921535564,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" ","content":""}
+{"ts":1775921535565,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"8","content":""}
+{"ts":1775921535565,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" ","content":""}
+{"ts":1775921535565,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":",","content":""}
+{"ts":1775921535565,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"mph","content":""}
+{"ts":1775921535565,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" and","content":""}
+{"ts":1775921535565,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" a","content":""}
+{"ts":1775921535566,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" “","content":""}
+{"ts":1775921535563,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" easy","content":""}
+{"ts":1775921535563,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":",","content":""}
+{"ts":1775921535578,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"fe","content":""}
+{"ts":1775921535578,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"els","content":""}
+{"ts":1775921535579,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" like","content":""}
+{"ts":1775921535579,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"”","content":""}
+{"ts":1775921535579,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" closer","content":""}
+{"ts":1775921535579,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" to","content":""}
+{"ts":1775921535579,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" ","content":""}
+{"ts":1775921535579,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"40","content":""}
+{"ts":1775921535579,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" ","content":""}
+{"ts":1775921535580,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"°F","content":""}
+{"ts":1775921535580,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":".","content":""}
+{"ts":1775921535580,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" Expect","content":""}
+{"ts":1775921535580,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" highs","content":""}
+{"ts":1775921535580,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" to","content":""}
+{"ts":1775921535580,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" peak","content":""}
+{"ts":1775921535580,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" around","content":""}
+{"ts":1775921535581,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" the","content":""}
+{"ts":1775921535581,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" upper","content":""}
+{"ts":1775921535581,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" ","content":""}
+{"ts":1775921535581,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"40","content":""}
+{"ts":1775921535582,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"s","content":""}
+{"ts":1775921535583,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" to","content":""}
+{"ts":1775921535585,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" near","content":""}
+{"ts":1775921535586,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" ","content":""}
+{"ts":1775921535588,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"50","content":""}
+{"ts":1775921535590,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" ","content":""}
+{"ts":1775921535591,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":"°F","content":""}
+{"ts":1775921535592,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" this","content":""}
+{"ts":1775921535592,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" afternoon","content":""}
+{"ts":1775921535596,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" before","content":""}
+{"ts":1775921535598,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" low","content":""}
+{"ts":1775921535598,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" clouds","content":""}
+{"ts":1775921535599,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" and","content":""}
+{"ts":1775921535599,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" some","content":""}
+{"ts":1775921535600,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" evening","content":""}
+{"ts":1775921535601,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" fog","content":""}
+{"ts":1775921535603,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" drift","content":""}
+{"ts":1775921535610,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" back","content":""}
+{"ts":1775921535610,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" in","content":""}
+{"ts":1775921535754,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":".","content":""}
+{"ts":1775921535754,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" Tomorrow","content":""}
+{"ts":1775921535763,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" turns","content":""}
+{"ts":1775921535764,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" much","content":""}
+{"ts":1775921535764,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" warmer","content":""}
+{"ts":1775921535764,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":",","content":""}
+{"ts":1775921535771,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" windy","content":""}
+{"ts":1775921535772,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":",","content":""}
+{"ts":1775921535772,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" and","content":""}
+{"ts":1775921535772,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" wetter","content":""}
+{"ts":1775921535772,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" with","content":""}
+{"ts":1775921535774,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" rain","content":""}
+{"ts":1775921535775,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" moving","content":""}
+{"ts":1775921535781,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" in","content":""}
+{"ts":1775921535782,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" during","content":""}
+{"ts":1775921535782,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" the","content":""}
+{"ts":1775921535783,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" afternoon","content":""}
+{"ts":1775921535800,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" and","content":""}
+{"ts":1775921535803,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":" night","content":""}
+{"ts":1775921535803,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_delta","delta":".","content":""}
+{"ts":1775921535963,"event":"assistant_text_stream","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","evtType":"text_end","delta":"","content":"[[reply_to_current]]Chicago’s having a bright but chilly spring day: about 44 °F (7 °C) right now with sun and a few high clouds, an easy ESE breeze near 8 mph, and a “feels like” closer to 40 °F. Expect highs to peak around the upper 40s to near 50 °F this afternoon before low clouds and some evening fog drift back in. Tomorrow turns much warmer, windy, and wetter with rain moving in during the afternoon and night."}
+{"ts":1775921536035,"event":"assistant_message_end","runId":"5b9ee44d-c02b-4833-ac56-91c1ba455133","rawText":"[[reply_to_current]]Chicago’s having a bright but chilly spring day: about 44 °F (7 °C) right now with sun and a few high clouds, an easy ESE breeze near 8 mph, and a “feels like” closer to 40 °F. Expect highs to peak around the upper 40s to near 50 °F this afternoon before low clouds and some evening fog drift back in. Tomorrow turns much warmer, windy, and wetter with rain moving in during the afternoon and night.","rawThinking":""}

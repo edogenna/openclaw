@@ -1,4 +1,7 @@
 import { randomUUID } from "node:crypto";
+import { appendFileSync } from "node:fs";
+import { homedir } from "node:os";
+import { join } from "node:path";
 import type { StreamFn } from "@mariozechner/pi-agent-core";
 import {
   calculateCost,
@@ -39,6 +42,7 @@ import { transformTransportMessages } from "./transport-message-transform.js";
 import { mergeTransportMetadata, sanitizeTransportPayloadText } from "./transport-stream-shared.js";
 
 const DEFAULT_AZURE_OPENAI_API_VERSION = "2024-12-01-preview";
+const OPENAI_LLM_LOG_FILE = join(homedir(), ".openclaw", "llm_calls.log");
 
 type OpenAIReasoningEffort = "minimal" | "low" | "medium" | "high" | "xhigh";
 
@@ -51,6 +55,8 @@ type BaseStreamOptions = {
   sessionId?: string;
   onPayload?: (payload: unknown, model: Model<Api>) => unknown;
   headers?: Record<string, string>;
+  openaiLogFile?: string;
+  openaiLogEnabled?: boolean;
 };
 
 type OpenAIResponsesOptions = BaseStreamOptions & {
@@ -100,6 +106,36 @@ type MutableAssistantOutput = {
 };
 
 export { sanitizeTransportPayloadText } from "./transport-stream-shared.js";
+
+function resolveOpenAILogFilePath(options: BaseStreamOptions | undefined): string {
+  if (typeof options?.openaiLogFile === "string" && options.openaiLogFile.trim().length > 0) {
+    return options.openaiLogFile.trim();
+  }
+  return OPENAI_LLM_LOG_FILE;
+}
+
+function isOpenAILoggingEnabled(options: BaseStreamOptions | undefined): boolean {
+  if (typeof options?.openaiLogEnabled === "boolean") {
+    return options.openaiLogEnabled;
+  }
+  return true;
+}
+
+function logOpenAIToFile(
+  message: string,
+  options: BaseStreamOptions | undefined,
+  logger: { error: (message: string, meta?: Record<string, unknown>) => void },
+) {
+  if (!isOpenAILoggingEnabled(options)) {
+    return;
+  }
+  try {
+    const timestamp = new Date().toISOString();
+    appendFileSync(resolveOpenAILogFilePath(options), `\n[${timestamp}] ${message}\n`, "utf8");
+  } catch (error) {
+    logger.error("Failed to write OpenAI prompt/response log file", { error });
+  }
+}
 
 function stringifyUnknown(value: unknown, fallback = ""): string {
   if (typeof value === "string") {
@@ -691,6 +727,11 @@ export function createOpenAIResponsesTransportStreamFn(): StreamFn {
           params = nextParams as typeof params;
         }
         params = mergeTransportMetadata(params, turnState?.metadata);
+        logOpenAIToFile(
+          `OpenAI Responses Request - Model: ${model.provider}/${model.id}\nParams: ${JSON.stringify(params, null, 2)}`,
+          options as BaseStreamOptions | undefined,
+          console,
+        );
         const responseStream = (await client.responses.create(
           params as never,
           options?.signal ? { signal: options.signal } : undefined,
@@ -706,6 +747,11 @@ export function createOpenAIResponsesTransportStreamFn(): StreamFn {
         if (output.stopReason === "aborted" || output.stopReason === "error") {
           throw new Error("An unknown error occurred");
         }
+        logOpenAIToFile(
+          `OpenAI Responses Response - Model: ${model.provider}/${model.id}\nStop Reason: ${output.stopReason}\nUsage: ${JSON.stringify(output.usage)}\nResponse: ${JSON.stringify(output, null, 2)}`,
+          options as BaseStreamOptions | undefined,
+          console,
+        );
         stream.push({ type: "done", reason: output.stopReason as never, message: output as never });
         stream.end();
       } catch (error) {
@@ -852,6 +898,11 @@ export function createAzureOpenAIResponsesTransportStreamFn(): StreamFn {
           params = nextParams as typeof params;
         }
         params = mergeTransportMetadata(params, turnState?.metadata);
+        logOpenAIToFile(
+          `Azure OpenAI Responses Request - Model: ${model.provider}/${model.id}\nDeployment: ${deploymentName}\nParams: ${JSON.stringify(params, null, 2)}`,
+          options as BaseStreamOptions | undefined,
+          console,
+        );
         const responseStream = (await client.responses.create(
           params as never,
           options?.signal ? { signal: options.signal } : undefined,
@@ -864,6 +915,11 @@ export function createAzureOpenAIResponsesTransportStreamFn(): StreamFn {
         if (output.stopReason === "aborted" || output.stopReason === "error") {
           throw new Error("An unknown error occurred");
         }
+        logOpenAIToFile(
+          `Azure OpenAI Responses Response - Model: ${model.provider}/${model.id}\nStop Reason: ${output.stopReason}\nUsage: ${JSON.stringify(output.usage)}\nResponse: ${JSON.stringify(output, null, 2)}`,
+          options as BaseStreamOptions | undefined,
+          console,
+        );
         stream.push({ type: "done", reason: output.stopReason as never, message: output as never });
         stream.end();
       } catch (error) {
@@ -981,6 +1037,11 @@ export function createOpenAICompletionsTransportStreamFn(): StreamFn {
         if (nextParams !== undefined) {
           params = nextParams as typeof params;
         }
+        logOpenAIToFile(
+          `OpenAI Completions Request - Model: ${model.provider}/${model.id}\nParams: ${JSON.stringify(params, null, 2)}`,
+          options as BaseStreamOptions | undefined,
+          console,
+        );
         const responseStream = (await client.chat.completions.create(params as never, {
           signal: options?.signal,
         })) as unknown as AsyncIterable<ChatCompletionChunk>;
@@ -989,6 +1050,11 @@ export function createOpenAICompletionsTransportStreamFn(): StreamFn {
         if (options?.signal?.aborted) {
           throw new Error("Request was aborted");
         }
+        logOpenAIToFile(
+          `OpenAI Completions Response - Model: ${model.provider}/${model.id}\nStop Reason: ${output.stopReason}\nUsage: ${JSON.stringify(output.usage)}\nResponse: ${JSON.stringify(output, null, 2)}`,
+          options as BaseStreamOptions | undefined,
+          console,
+        );
         stream.push({ type: "done", reason: output.stopReason as never, message: output as never });
         stream.end();
       } catch (error) {
