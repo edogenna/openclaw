@@ -727,8 +727,9 @@ export function createOpenAIResponsesTransportStreamFn(): StreamFn {
           params = nextParams as typeof params;
         }
         params = mergeTransportMetadata(params, turnState?.metadata);
+        // LOG
         logOpenAIToFile(
-          `OpenAI Responses Request - Model: ${model.provider}/${model.id}\nParams: ${JSON.stringify(params, null, 2)}`,
+          `OpenAI REQUEST - Model: ${model.provider}/${model.id}\nParams: ${JSON.stringify(params, null, 2)}`,
           options as BaseStreamOptions | undefined,
           console,
         );
@@ -747,8 +748,9 @@ export function createOpenAIResponsesTransportStreamFn(): StreamFn {
         if (output.stopReason === "aborted" || output.stopReason === "error") {
           throw new Error("An unknown error occurred");
         }
+        // LOG
         logOpenAIToFile(
-          `OpenAI Responses Response - Model: ${model.provider}/${model.id}\nStop Reason: ${output.stopReason}\nUsage: ${JSON.stringify(output.usage)}\nResponse: ${JSON.stringify(output, null, 2)}`,
+          `OpenAI RESPONSE - Model: ${model.provider}/${model.id}\nStop Reason: ${output.stopReason}\nUsage: ${JSON.stringify(output.usage)}\nResponse: ${JSON.stringify(output, null, 2)}`,
           options as BaseStreamOptions | undefined,
           console,
         );
